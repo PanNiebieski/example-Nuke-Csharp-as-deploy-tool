@@ -10,22 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="build-and-test.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>build-and-test.yaml</DependentUpon>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Nuke.Common" Version="5.1.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="build-and-test.yaml">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>build-and-test.cs</LastGenOutput>
-    </None>
   </ItemGroup>
 
   <ItemGroup>
